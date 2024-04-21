@@ -1,51 +1,53 @@
 #include <iostream>
-#include <string>
+
+using namespace std;
+// Funciones para cada opción del menú
+void opcion1() {
+    cout << "Has seleccionado la opción 1" << endl;
+}
+
+void opcion2() {
+    cout << "Has seleccionado la opción 2" << endl;
+}
+
+void opcion3() {
+    cout << "Has seleccionado la opción 3" << endl;
+}
+
+void mostrarMenu() {
+    cout << "Menú:" << endl;
+    cout << "1. Opción 1" << endl;
+    cout << "2. Opción 2" << endl;
+    cout << "3. Opción 3" << endl;
+    cout << "4. Salir" << endl;
+}
 
 int main() {
-//int num1, num2;
+    int opcion;
 
+    do {
+        mostrarMenu();
+        cout << "Seleccione una opción: ";
+        cin >> opcion;
 
-  //std::cout << "Introduce un numero!\n";
-  //std::cin >> num1;
-  //std::cout << "Introduce otro numero!\n";
-  //std::cin >> num2;
+        switch(opcion) {
+            case 1:
+                opcion1();
+                break;
+            case 2:
+                opcion2();
+                break;
+            case 3:
+                opcion3();
+                break;
+            case 4:
+                cout << "Saliendo del programa..." << endl;
+                break;
+            default:
+                cout << "Opción inválida. Por favor, seleccione una opción válida." << endl;
+                break;
+        }
+    } while (opcion != 4);
 
-  //std::cout << "sus numeros son ";
-  //std::cout << num1 << "\n";
-  //std::cout << " y ";
-  //std::cout << num2;
-
-  //  menu
-  int op;
-while(true){
-
-  void menu();
-  std::cin >> op;
-  if (op < 5){
-    break;
-  }
-  void opcionmenu(int op);
- }
-}
-
-void opcionmenu(int op){
-
-switch (op){
-  case 1:
-  std::cout << "hola";
-  case 2:
-  std::cout << "hola";
-  case 3:
-  std::cout << "pop";
-  case 4:
-  std::cout << "lol";
-}
-
-}
-
-void menu(){
-  std::cout << "1. opcion 1\n";
-  std::cout << "2. opcion 2\n";
-  std::cout << "3. opcion 3\n";
-  std::cout << "4. opcion 4\n";
+    return 0;
 }
