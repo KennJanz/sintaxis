@@ -4,7 +4,7 @@
 int main() {
 //int num1, num2;
 
-  
+
   //std::cout << "Introduce un numero!\n";
   //std::cin >> num1;
   //std::cout << "Introduce otro numero!\n";
@@ -18,7 +18,7 @@ int main() {
   //  menu
   int op;
 while(true){
-  
+
   void menu();
   std::cin >> op;
   if (op < 5){
@@ -40,7 +40,7 @@ switch (op){
   case 4:
   std::cout << "lol";
 }
-  
+
 }
 
 void menu(){
